@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naira Spending Diary</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#2e7d32" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🇳🇬 Spending Diary</h1>
+
+      <div class="summary-grid">
+        <div class="stat-card">
+          Today: <br /><strong>₦<span id="day-total">0</span></strong>
+        </div>
+        <div class="stat-card">
+          Week: <br /><strong>₦<span id="week-total">0</span></strong>
+        </div>
+        <div class="stat-card">
+          Month: <br /><strong>₦<span id="month-total">0</span></strong>
+        </div>
+      </div>
+
+      <button id="start-btn">🎤 Record Spending</button>
+      <p id="status">Tap and say: "I spent 5000 on fuel"</p>
+
+      <div class="actions">
+        <button id="download-btn" class="secondary-btn">
+          📊 Download Excel (CSV)
+        </button>
+      </div>
+
+      <div class="diary-section">
+        <h3>Recent Entries</h3>
+        <div id="diary-list"></div>
+      </div>
+
+      <button id="clear-btn" class="danger-btn">Clear All Data</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
