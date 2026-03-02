@@ -14,23 +14,39 @@
 
       <div class="summary-grid">
         <div class="stat-card">
-          Today: <br /><strong>₦<span id="day-total">0</span></strong>
+          Today<br /><strong>₦<span id="day-total">0</span></strong>
         </div>
         <div class="stat-card">
-          Week: <br /><strong>₦<span id="week-total">0</span></strong>
+          Week<br /><strong>₦<span id="week-total">0</span></strong>
         </div>
         <div class="stat-card">
-          Month: <br /><strong>₦<span id="month-total">0</span></strong>
+          Month<br /><strong>₦<span id="month-total">0</span></strong>
         </div>
       </div>
 
-      <button id="start-btn">🎤 Record Spending</button>
-      <p id="status">Tap and say: "I spent 5000 on fuel"</p>
+      <div class="budget-section">
+        <small>Monthly Budget Progress</small>
+        <div class="progress-container">
+          <div id="budget-bar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="voice-center">
+        <div id="pulse-ring"></div>
+        <button id="start-btn">🎤</button>
+      </div>
+      <p id="status">Tap to record spending</p>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search entries (e.g. Suya, Fuel)..."
+        />
+      </div>
 
       <div class="actions">
-        <button id="download-btn" class="secondary-btn">
-          📊 Download Excel (CSV)
-        </button>
+        <button id="download-btn" class="secondary-btn">📊 Export Excel</button>
       </div>
 
       <div class="diary-section">
